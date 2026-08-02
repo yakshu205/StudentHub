@@ -1,0 +1,158 @@
+/* faq.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* Header */
+/* Header */
+
+#header{
+    color:#0d47a1;
+}
+
+header{
+    background:#FFD54F;
+    text-align:center;
+    padding:25px;
+    border-bottom:4px solid #FBC02D;
+}
+
+header img{
+    width:270px;
+    height:100px;
+    border-radius:10px;
+    background:white;
+    padding:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1{
+    font-size:36px;
+    color:#031010;
+    margin-top:10px;
+}
+
+header p{
+    font-size:18px;
+    color:#444;
+}
+
+/* Navigation */
+
+nav{
+    background:#333;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#FFD54F;
+}
+main{
+    width:90%;
+    margin:25px auto;
+}
+
+section{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-left:5px solid #FFD54F;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+
+h2{
+    color:#222;
+    margin-bottom:10px;
+}
+
+h3{
+    color:#444;
+    margin-bottom:10px;
+}
+
+p{
+    line-height:1.7;
+    margin-bottom:10px;
+}
+
+ul{
+    margin-left:20px;
+}
+
+li{
+    margin:8px 0;
+}
+
+article{
+    background:white;
+    padding:15px;
+    margin-top:15px;
+    border-left:4px solid #FFD54F;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+a{
+    color:#0d47a1;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+hr{
+    margin:20px 0;
+    border:1px solid #ddd;
+}
+
+/* Footer */
+
+footer{
+    background:#FFE082;
+    color:#222;
+    text-align:center;
+    padding:30px 20px;
+    margin-top:30px;
+    border-top:4px solid #FBC02D;
+}
+
+footer h2{
+    color:#000;
+    margin-bottom:10px;
+}
+
+footer p{
+    color:#333;
+    margin:8px 0;
+}
+
+footer a{
+    color:#0d47a1;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer a:hover{
+    color:#000;
+    text-decoration:underline;
+}
