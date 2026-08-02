@@ -10,9 +10,27 @@
     justify-items: center;
 }
 body{
-    font-family:Arial,sans-serif;
-    background:#f5f5f5;
-    color:#333;
+    background:
+         linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.45)),
+        url("../IMAGES/college campus.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+body img{
+    width:270px;
+    height:100px;
+    border-radius:10px;   /* Square with slightly rounded corners */
+    background:rgba(59, 56, 56, 0);
+    padding:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    margin-bottom:10px;
+}
+body h1{
+    margin-top:15px;
+    color:#000000;
+    font-size:36px;
 }
 
 /* Header */
