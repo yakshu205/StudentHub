@@ -1,15 +1,13 @@
-/* about.css */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    font-size: 20px;
 }
 
 body{
-    font-family:Arial,sans-serif;
-    background:#f5f5f5;
-    color:#333;
+    background:#f4f7fc;
 }
 
 /* Header */
@@ -59,95 +57,94 @@ nav a:hover{
 /* Marquee */
 
 marquee{
-    background:#f0e5b763;
+    background:#8fd4f063;
     color:#222;
     padding:10px;
     font-weight:bold;
 }
 
-/* Main */
+/* Events */
 
-main{
+.events{
     width:90%;
-    margin:20px auto;
+    max-width:1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:25px;
 }
 
-/* First Section */
+/* Event Card */
 
-/* About StudentHub Box */
-
-section:first-child{
-    width:450px;
-    margin:20px auto;
+.event-card{
     background:white;
+    display:flex;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.event-card:hover{
+    transform:translateY(-8px);
+}
+
+/* Date */
+
+.date{
+     background:#7fb1c8;
+    color:rgb(33, 32, 32);
+    width:110px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.date h2{
+    font-size:40px;
+}
+
+.date span{
+    font-size:18px;
+    font-weight:600;
+}
+
+/* Details */
+
+.details{
     padding:20px;
-    border-left:5px solid #FFD54F;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-    text-align:center;
+    flex:1;
 }
 
-section:first-child h2{
-    color:#222;
-    font-size:28px;
-}
-
-/* Remaining Sections */
-
-section:not(:first-child){
-    background:white;
-    width:100%;
-    margin:20px 0;
-    padding:20px;
-    border-left:5px solid #FFD54F;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-    text-align:left;
-}
-
-h2{
-    color:#222;
+.details h3{
+    color:#5265f9;
     margin-bottom:12px;
 }
 
-h3{
-    color:#444;
-    margin-bottom:10px;
-}
-
-p{
+.details p{
     margin:10px 0;
-    line-height:1.7;
+    color:#555;
 }
 
-ul{
-    margin-left:25px;
+.details i{
+    color:#5265f9;
+    margin-right:8px;
 }
 
-li{
-    margin:8px 0;
-}
-
-article{
-    background:#fafafa;
-    padding:15px;
+.details a{
+    display:inline-block;
     margin-top:15px;
-    border-radius:8px;
-    border-left:4px solid #FFD54F;
-}
-
-a{
-    color:#0d47a1;
     text-decoration:none;
+   background:#5265f9;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    transition:.3s;
 }
 
-a:hover{
-    text-decoration:underline;
-}
-
-hr{
-    margin:20px 0;
-    border:1px solid #ddd;
+.details a:hover{
+    background:#5265f9;
 }
 
 /* Footer */
@@ -186,4 +183,27 @@ footer small{
     display:block;
     margin-top:15px;
     color:#ffffff;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.event-card{
+    flex-direction:column;
+}
+
+.date{
+    width:100%;
+    padding:20px;
+}
+
+header h1{
+    font-size:30px;
+}
+
+.events{
+    width:95%;
+}
+
 }

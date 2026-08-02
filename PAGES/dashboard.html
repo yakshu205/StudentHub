@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StudentHub Portal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub Dashboard</title>
+
+    
+    <link rel="stylesheet" href="..\Practical -3\dashboard.css">
 </head>
-
-<body>
-
 <header>
-
+  <!-- complete -->
 <center>
-
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_msVTJ1UZqmtO-rMykxXBRws_5_EmYQxh7ZsTVTWeQoeh8BjRmlV7sLk&s=10" alt="StudentHub Logo" width="120">
 
 <h1>StudentHub Portal</h1>
 
+<br>
 <p><b>Empowering Students Through Technology</b></p>
 
 </center>
 
-<hr>
-
-<nav>
+<nav class="navigation">
 
 <center>
 
-<a href="home.html">Home</a> |
+<a href="home.html">Home </a> |
 <a href="about.html">About</a> |
+<a href="register.html">Register</a> |
+<a href="login.html">Login</a> |
 <a href="dashboard.html">Dashboard</a> |
 <a href="events.html">Events</a> |
 <a href="profile.html">Profile</a> |
@@ -36,82 +36,105 @@
 <a href="faq.html">FAQ</a> |
 <a href="feedback.html">Feedback</a>
 
-</center>
-
+</center> 
 </nav>
 
-<hr>
-
-<marquee>
+<marquee style="background-color: rgb(251, 248, 148); color: #f37208;">
 Admission Open 2026 • AI Workshop Registration Started • National Hackathon Registration Open • Semester Examination Timetable Released
 </marquee>
 
-<hr>
 
-  <section>
-    <h2>Dashboard</h2>
 
-    <section>
-      <h3>Attendance</h3>
-      <p>Attendance rate: <strong><span id="attendance-percent">--</span></strong></p>
-      <table id="attendance-table" border="1" cellpadding="6" cellspacing="0">
-        <tr><th>Date</th><th>Status</th></tr>
-        <tr><td>2026-07-01</td><td>Present</td></tr>
-        <tr><td>2026-07-02</td><td>Absent</td></tr>
-        <tr><td>2026-07-03</td><td>Present</td></tr>
-      </table>
-    </section>
+</header>
+<body>
 
-    <section>
-      <h3>Timetable</h3>
-      <table border="1" cellpadding="6">
-        <tr><th>Day</th><th>9:00-10:00</th><th>10:15-11:15</th></tr>
-        <tr><td>Mon</td><td>Mathematics</td><td>Physics</td></tr>
-        <tr><td>Tue</td><td>English</td><td>Computer Science</td></tr>
-        <tr><td>Wed</td><td>Chemistry</td><td>Lab</td></tr>
-      </table>
-    </section>
+    <div class="container">
+        <div class="main">
+            <div class="topbar">
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
 
-    <section>
-      <h3>Results</h3>
-      <table border="1" cellpadding="6">
-        <tr><th>Course</th><th>Grade</th></tr>
-        <tr><td>Mathematics</td><td>A</td></tr>
-        <tr><td>Physics</td><td>B+</td></tr>
-        <tr><td>Computer Science</td><td>A-</td></tr>
-      </table>
-    </section>
+                <div class="user">
+                    <i class="fa-solid fa-bell"></i>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="User">
+                    <span>Yaksh Butani</span>
+                </div>
+            </div>
 
-    <section>
-      <h3>Fees Payment</h3>
-      <table border="1" cellpadding="6">
-        <tr><th>Installment</th><th>Due Date</th><th>Status</th></tr>
-        <tr><td>1</td><td>2026-01-15</td><td>Paid</td></tr>
-        <tr><td>2</td><td>2026-06-15</td><td>Pending</td></tr>
+            <div class="welcome">
+                <h1>Welcome Back 👋</h1>
+                <p>B.Tech Computer Engineering</p>
+            </div>
 
-      </table>
-    </section>
+            <div class="cards">
+                <div class="card">
+                    <i class="fa-solid fa-user-check"></i>
+                    <h2>95%</h2>
+                    <p>Attendance</p>
+                </div>
 
-  </section>
+                <div class="card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2>7.93</h2>
+                    <p>CGPA</p>
+                </div>
 
- <footer>
-        
-            <h2>StudentHub Portal</h2>
+                <div class="card">
+                    <i class="fa-solid fa-book"></i>
+                    <h2>7</h2>
+                    <p>Assignments</p>
+                </div>
 
-            <p><strong>Email :</strong>
-                <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a>
-            </p>
+                <div class="card">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h2>2</h2>
+                    <p>Projects</p>
+                </div>
+            </div>
 
-            <p><strong>Phone :</strong>
-                <a href="tel:+91 9876543210"> +91 9876543210</a>
-            </p>
+            <div class="dashboard-content">
+                <div class="left-panel">
+                    <div class="box">
+                        <h2>Quick Links</h2>
+                        <a href="profile.html"><i class="fa-solid fa-user"></i> My Profile</a>
+                        <a href="attendance.html"><i class="fa-solid fa-calendar-check"></i> Attendance</a>
+                        <a href="result.html"><i class="fa-solid fa-square-poll-vertical"></i> Results</a>
+                        <a href="fees.html"><i class="fa-solid fa-wallet"></i> Fees</a>
+                        <a href="assignment.html"><i class="fa-solid fa-book"></i> Assignments</a>
+                    </div>
+                </div>
 
-            <p><strong>Address : </strong>CHARUSAT University, Anand, Gujarat</p>
+                <div class="right-panel">
+                    <div class="box">
+                        <h2>Latest Notices</h2>
+                        <ul>
+                            <li>📢 Internal Exam starts from 10 August.</li>
+                            <li>📢 Semester Project Submission: 20 August.</li>
+                            <li>📢 Hackathon Registration is Open.</li>
+                            <li>📢 Library will remain closed on Sunday.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-            <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+            <div class="activity">
+                <h2>Recent Activity</h2>
+                <ul>
+                    <li>✅ Assignment 7 Submitted Successfully</li>
+                    <li>✅ Attendance Updated</li>
+                    <li>✅ Semester Fees Paid</li>
+                    <li>✅ New Result Published</li>
+                    <li>✅ New Notice Added</li>
+                </ul>
+            </div>
 
-        
-    </footer>
-</header>    
+            <footer>
+                <p>© 2026 StudentHub | All Rights Reserved</p>
+            </footer>
+        </div>
+    </div>
 
 </body>
+</html>

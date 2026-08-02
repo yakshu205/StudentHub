@@ -4,114 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Profile</title>
+    <link rel="stylesheet" href="..\Practical -3\profile.css">
 </head>
 <body>
+ <!-- complete -->
+    <div class="container">
 
-    <center>
-        <h1>Student Profile</h1>
-        
+    <!-- Profile Header -->
+    <div class="profile-header">
 
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-             alt="Profile Photo"
-             width="150">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Student">
 
-        <h2>Yaksh Butani</h2>
-        <p><b>B.Tech Computer Engineering</b></p>
-    </center>
+        <h1>Yaksh Butani</h1>
 
-    <hr>
+        <p>B.Tech Computer Engineering</p>
 
-    <h2>Personal Information</h2>
+        <span class="badge">3rd Semester</span>
 
-    <table border="1" cellpadding="10">
+    </div>
 
-        <tr>
-            <th>Name</th>
-            <td>Yaksh Butani</td>
-        </tr>
-         
-             <tr>
-            <th>Date Of Birth</th>
-            <td>20-05-2008</td>
-        </tr>
-        <tr>
-            <th>Student ID</th>
-            <td>25DCE014</td>
-        </tr>
+    <!-- Statistics -->
 
-        <tr>
-            <th>Email</th>
-            <td>yakshbutani1@gmail.com</td>
-        </tr>
+    <div class="stats">
 
-        <tr>
-            <th>Phone</th>
-            <td>+91 9726724445</td>
-        </tr>
+        <div class="card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>7.93</h2>
+            <p>CGPA</p>
+        </div>
 
-        <tr>
-            <th>Department</th>
-            <td>Computer Engineering</td>
-        </tr>
+        <div class="card">
+            <i class="fa-solid fa-user-check"></i>
+            <h2>95%</h2>
+            <p>Attendance</p>
+        </div>
 
-        <tr>
-            <th>Semester</th>
-            <td>3rd Semester</td>
-        </tr>
+        <div class="card">
+            <i class="fa-solid fa-folder-open"></i>
+            <h2>2</h2>
+            <p>Projects</p>
+        </div>
 
-        <tr>
-            <th>Address</th>
-            <td>Anand, Gujarat</td>
-        </tr>
+        <div class="card">
+            <i class="fa-solid fa-book"></i>
+            <h2>7</h2>
+            <p>Assignments</p>
+        </div>
 
-    </table>
+    </div>
 
-    <hr>
+    <!-- Personal Information -->
 
-    <h2>Academic Details</h2>
+    <div class="section">
 
-    <ul>
-        <li>CGPA : 7.93</li>
-        <li>Attendance : 88%</li>
-        <li>Assignments Submitted : 7</li>
-        <li>Projects Completed : 3</li>
-    </ul>
+        <h2>Personal Information</h2>
 
-    <hr>
+        <div class="details">
 
-    <h2>Skills</h2>
+            <div>
+                <h4>Student ID</h4>
+                <p>25DCS140</p>
+            </div>
 
-    <ul>
-        <li>C Programming</li>
-        <li>C++</li>
-        <li>Java</li>
-        <li>HTML</li>
-        <li>Problem Solving</li>
-    </ul>
+            <div>
+                <h4>Date of Birth</h4>
+                <p>26-02-2007</p>
+            </div>
 
-    <hr>
+            <div>
+                <h4>Email</h4>
+                <p>krish@gmail.com</p>
+            </div>
 
-    <h2>Achievements</h2>
+            <div>
+                <h4>Phone</h4>
+                <p>+91 9876543210</p>
+            </div>
 
-    <ol>
-        <li> Winner - Coding Competition</li>
-        <li> Web Development Workshop Completed</li>
-        <li> National Hackathon Participant</li>
-    </ol>
+            <div>
+                <h4>Department</h4>
+                <p>Computer Science Engineering</p>
+            </div>
 
-    <hr>
+            <div>
+                <h4>Address</h4>
+                <p>Anand, Gujarat</p>
+            </div>
 
-    <h2>Profile Actions</h2>
+        </div>
 
-    <a href="edit.html">Edit Profile  | </a>
+    </div>
 
-    <a href="dashboard.html">Deshboard  |</a>
+    <!-- Skills -->
 
-    <a href="home.html">Home  | </a>
+    <div class="section">
 
-    <a href="login.html">Logout  |</a>
+        <h2>Skills</h2>
 
-    <hr>
+        <div class="skills">
+
+            <span>C</span>
+            <span>C++</span>
+            <span>Java</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Problem Solving</span>
+
+        </div>
+
+    </div>
+
+    <!-- Achievements -->
+
+    <div class="section">
+
+        <h2>Achievements</h2>
+
+        <ul>
+
+            <li> Winner - Coding Competition</li>
+
+            <li> Web Development Workshop Completed</li>
+
+            <li>National Hackathon Participant</li>
+
+            <li> Java Programming Certificate</li>
+
+        </ul>
+
+    </div>
+
+    <!-- Buttons -->
+
+    <div class="buttons">
+
+        <a href="edit.html">Edit Profile</a>
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="home.html">Home</a>
+
+        <a href="login.html">Logout</a>
+
+    </div>
+
+</div>
+
 
  
 </body>

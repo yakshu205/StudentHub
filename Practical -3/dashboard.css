@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size: 20px;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+    color:#333;
+    
+}
+
+/* Header */
+
+header{
+    background:
+         linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.45)),
+        url("../IMAGES/college campus.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+header img{
+    width:270px;
+    height:100px;
+    border-radius:10px;   /* Square with slightly rounded corners */
+    background:rgba(140, 131, 131, 0);
+    padding:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    margin-bottom:10px;
+}
+header h1{
+    margin-top:15px;
+    color:#000000;
+    font-size:36px;
+}
+
+/* Navigation */
+nav{
+    background:#2f5f80e1;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#dfc059;
+}
+/* Marquee */
+
+marquee{
+    background:#f0e5b763;
+    color:#222;
+    padding:10px;
+    font-weight:bold;
+}
+
+
+
+
+
+
+.container {
+    width: 100%;
+    padding: 25px 20px;
+}
+
+.main {
+    max-width: 1100px;
+    margin: auto;
+    background: #eef5ff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #a8d7e2;
+    border-radius: 25px;
+    outline: none;
+    width: 250px;
+}
+
+.search i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.welcome h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.welcome p {
+    color: #666;
+    font-size: 18px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: #9bc1d5;
+    border-radius: 15px;
+    padding: 22px;
+    min-height: 150px;
+    min-width: 80px;   /* Box ki height badh gayi */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* Content center me rahega */
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card i {
+    font-size: 28px;
+    color: #5468ff;
+    margin-bottom: 12px;
+}
+
+.card h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #666;
+    font-weight: 500;
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.box {
+    background: #aad8f1;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.box h2,
+.activity h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.box a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.box a:last-child {
+    border-bottom: none;
+}
+
+.box a i {
+    margin-right: 10px;
+    color: #5468ff;
+}
+
+.box ul,
+.activity ul {
+    list-style: none;
+}
+
+.box ul li,
+.activity ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.activity {
+    background: #b7dde3;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    padding-top: 10px;
+}
+
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .search input {
+        width: 100%;
+    }
+}

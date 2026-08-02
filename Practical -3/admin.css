@@ -1,15 +1,16 @@
-/* about.css */
-
+/* Main */ 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-size: 20px;
 }
 
 body{
-    font-family:Arial,sans-serif;
+    font-family:Arial, sans-serif;
     background:#f5f5f5;
     color:#333;
+    
 }
 
 /* Header */
@@ -64,64 +65,54 @@ marquee{
     padding:10px;
     font-weight:bold;
 }
-
-/* Main */
-
 main{
     width:90%;
     margin:20px auto;
 }
 
-/* First Section */
+/* Dashboard Overview Box */
 
-/* About StudentHub Box */
-
-section:first-child{
-    width:450px;
+div{
+    width:550px;
+    min-height:150px;
     margin:20px auto;
     background:white;
     padding:20px;
-    border-left:5px solid #FFD54F;
+    border-left:5px solid #5265f9; ;
     border-radius:10px;
     box-shadow:0 2px 8px rgba(0,0,0,0.15);
     text-align:center;
 }
-
-section:first-child h2{
-    color:#222;
-    font-size:28px;
+h1{
+    font-size: 35px;
 }
 
 /* Remaining Sections */
 
-section:not(:first-child){
-    background:white;
+section{
     width:100%;
     margin:20px 0;
+    background:white;
     padding:20px;
-    border-left:5px solid #FFD54F;
+    border-left:5px solid #5265f9; ;
     border-radius:10px;
     box-shadow:0 2px 8px rgba(0,0,0,0.15);
     text-align:left;
 }
 
-h2{
+section h2,
+section h3{
     color:#222;
-    margin-bottom:12px;
-}
-
-h3{
-    color:#444;
     margin-bottom:10px;
 }
 
 p{
-    margin:10px 0;
     line-height:1.7;
+    margin:10px 0;
 }
 
 ul{
-    margin-left:25px;
+    margin-left:20px;
 }
 
 li{
@@ -129,61 +120,10 @@ li{
 }
 
 article{
-    background:#fafafa;
+    background:white;
     padding:15px;
     margin-top:15px;
+    border-left:4px solid #5265f9; ;
     border-radius:8px;
-    border-left:4px solid #FFD54F;
-}
-
-a{
-    color:#0d47a1;
-    text-decoration:none;
-}
-
-a:hover{
-    text-decoration:underline;
-}
-
-hr{
-    margin:20px 0;
-    border:1px solid #ddd;
-}
-
-/* Footer */
-
-footer{
-    background:#1c409d;   /* Light Yellow */
-    color:#ffffff;
-    text-align:center;
-    padding:30px 20px;
-    margin-top:30px;
-    border-top:4px solid #FBC02D;
-}
-
-footer h2{
-    color:#fdfdfd;
-    margin-bottom:10px;
-}
-
-footer p{
-    color:#fafafa;
-    margin:8px 0;
-}
-
-footer a{
-    color:#ffffff;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-footer a:hover{
-    color:#ffffff;
-    text-decoration:underline;
-}
-
-footer small{
-    display:block;
-    margin-top:15px;
-    color:#ffffff;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
