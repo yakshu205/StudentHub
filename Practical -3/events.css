@@ -24,7 +24,7 @@ header{
 header img{
     width:270px;
     height:100px;
-    border-radius:10px;   /* Square with slightly rounded corners */
+    border-radius:10px;   
     background:rgba(140, 131, 131, 0);
     padding:8px;
     box-shadow:0 4px 10px rgba(0,0,0,0.2);
