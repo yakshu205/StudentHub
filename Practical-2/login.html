@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub Login</title>
         <link rel="stylesheet" href="../Practical -3/login.css">
+       <script src="../JS/script.js" defer></script>
 
 </head>
 
@@ -20,14 +21,14 @@
 
     <p>
         Don't have an account?
-        <a href="register.html">Register Here</a>
+        <a href="register.html" id="register-link">Register Here</a>
     </p>
 
 </center>
 
 
-
-<form action="home.html" method="get">
+<div id="notification"></div>
+<form action="dashboard.html" method="get" id="login-form">
 
 <center>
 
@@ -41,7 +42,7 @@
             <td><label for="email">Email</label></td>
             <td>
                 <input type="email" id="email"
-                    placeholder="Enter Your Email" required>
+                    placeholder="Enter Your Email">
             </td>
         </tr>
 
@@ -49,13 +50,13 @@
             <td><label for="password">Password</label></td>
             <td>
                 <input type="password" id="password"
-                    placeholder="Enter Your Password" required>
+                    placeholder="Enter Your Password">
             </td>
         </tr>
 
         <tr>
             <td colspan="2" align="right">
-                <a href="#">Forgot Password?</a>
+                <a href="#" id="forgot-password-link">Forgot Password?</a>
             </td>
         </tr>
 
@@ -63,9 +64,9 @@
 
         <tr>
             <td colspan="2" align="center">
-                <button type="submit">Login</button>
+                <button type="submit" id="login-btn">Login</button>
                 
-                <button type="reset">Clear</button>
+                <button type="reset" id="clear-btn">Clear</button>
             </td>
         </tr>
 
@@ -82,7 +83,7 @@
 <center>
     <p>
         New User?
-        <a href="register.html">Create an Account</a>
+        <a href="register.html" id="create-account-link">Create an Account</a>
     </p>
 
     <small>

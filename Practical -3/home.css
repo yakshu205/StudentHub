@@ -6,10 +6,28 @@
     box-sizing:border-box;
 }
 
-body{
-    font-family:Arial, sans-serif;
-    background:#8dbaee77;
-    color:#333;
+/* Light Mode */
+body {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+
+
+/* Dark mode links */
+body.dark-mode a {
+    color: #66b3ff;
+}
+
+/* Button */
+#themeToggle {
+   height: 50%;
+   width: 50%;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+   float: right;
 }
 
 /* Header */
@@ -157,4 +175,59 @@ footer small{
     display:block;
     margin-top:15px;
     color:#ffffff;
+}
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode {
+    background-color: #000 !important;
+    color: white !important;
+}
+
+body.dark-mode header {
+    color: white;
+}
+
+body.dark-mode header h1 {
+    color: white !important;
+}
+
+body.dark-mode nav {
+    background-color: #111 !important;
+}
+
+body.dark-mode section,
+body.dark-mode article {
+    background-color: #000 !important;
+    color: white !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode li {
+    color: white !important;
+}
+
+body.dark-mode a {
+    color: #66d9ff !important;
+}
+
+body.dark-mode marquee {
+    background-color: #222 !important;
+    color: white !important;
+}
+
+body.dark-mode footer {
+    background-color: #111 !important;
+    color: white !important;
+}
+
+body.dark-mode footer h2,
+body.dark-mode footer h3,
+body.dark-mode footer p,
+body.dark-mode footer a {
+    color: white !important;
 }
