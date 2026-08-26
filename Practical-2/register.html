@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub Registration</title>
     <link rel="stylesheet" href="..\Practical -3\register.css">
+    <script src="..\JS\script.js" defer></script>
 </head>
 
  <!-- complete -->
@@ -38,67 +39,69 @@
 
 <tr>
     <td><label for="name">Full Name</label></td>
-    <td><input type="text" id="name" placeholder="Enter Full Name" required></td>
+    <td><input type="text" id="name" placeholder="Enter Full Name" ></td>
 </tr>
 
 <tr>
     <td><label for="email">Email</label></td>
-    <td><input type="email" id="email" placeholder="Enter Email" required></td>
+    <td><input type="email" id="email" placeholder="Enter Email" ></td>
 </tr>
 
 <tr>
     <td><label for="mobile">Mobile</label></td>
-    <td><input type="tel" id="mobile" placeholder="Enter Mobile Number" required></td>
+    <td><input type="tel" id="mobile" placeholder="Enter Mobile Number"></td>
 </tr>
 
 <tr>
     <td><label for="password">Password</label></td>
-    <td><input type="password" id="password" placeholder="Enter Password" required></td>
+    <td><input type="password" id="password" placeholder="Enter Password"></td>
 </tr>
 
 <tr>
     <td><label for="confirm">Confirm Password</label></td>
-    <td><input type="password" id="confirm" placeholder="Confirm Password" required></td>
+    <td><input type="password" id="confirm" placeholder="Confirm Password"></td>
 </tr>
 
 <tr>
     <td><label for="dob">Date of Birth</label></td>
-    <td><input type="date" id="dob" required></td>
+    <td><input type="date" id="dob"></td>
 </tr>
 
 <tr>
     <td>Gender</td>
     <td>
-        <input type="radio" name="gender" id="male">
-        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="Male">
+          <label for="male">Male</label>
 
-        <input type="radio" name="gender" id="female">
-        <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label>
 
-        <input type="radio" name="gender" id="other">
-        <label for="other">Other</label>
+              <input type="radio" name="gender" id="other" value="Other">
+                   <label for="other">Other</label>
     </td>
 </tr>
 
 <tr>
     <td><label for="course">Course</label></td>
     <td>
-        <select id="course">
-            <option>Select Course</option>
-            <option>B.Tech CSE</option>
-            <option>B.Tech CE</option>
-            <option>B.Tech IT</option>
-        </select>
+        
+     <select id="course">
+    <option value="">Select Course</option>
+    <option value="B.Tech CSE">B.Tech CSE</option>
+    <option value="B.Tech CE">B.Tech CE</option>
+    <option value="B.Tech IT">B.Tech IT</option>
+    </select>
+       
     </td>
 </tr>
 
 <tr>
     <td>Skills</td>
     <td>
-        <input type="checkbox"> C
-        <input type="checkbox"> C++
-        <input type="checkbox"> Java
-        <input type="checkbox"> Python
+        <input type="checkbox" name="skills" value="C"> C
+        <input type="checkbox" name="skills" value="C++"> C++
+        <input type="checkbox" name="skills" value="Java"> Java
+        <input type="checkbox" name="skills" value="Python"> Python
     </td>
 </tr>
 
@@ -112,16 +115,16 @@
 
 <tr>
     <td colspan="2" align="center">
-        <input type="checkbox" required>
+        <input type="checkbox" id="terms">
         I agree to the Terms & Conditions
     </td>
 </tr>
 
 <tr>
     <td colspan="2" align="center">
-        <button type="submit">Register</button>
+        <button type="submit" id="submit">Register</button>
     
-        <button type="reset">Clear</button>
+        <button type="reset" id="reset">Clear</button>
     </td>
 </tr>
 
@@ -137,6 +140,6 @@
 
 <center>
     <small> <p>&copy; 2026 StudentHub. All Rights Reserved.</p></small>
-</center>0
+</center>
 </body>
 </html>
