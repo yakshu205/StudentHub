@@ -269,3 +269,32 @@ footer {
         width: 100%;
     }
 }
+
+/* Student JSON Data Section */
+.students-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.student-card {
+    background: #ffffff;
+    border: 1px solid #d0e2ec;
+    border-radius: 8px;
+    padding: 15px;
+    min-width: 200px;
+    flex: 1;
+}
+
+.student-card h3 {
+    font-size: 18px;
+    color: #2f5f80;
+    margin-bottom: 6px;
+}
+
+.student-card p {
+    font-size: 14px;
+    color: #444;
+    margin: 4px 0;
+}

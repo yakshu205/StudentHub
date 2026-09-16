@@ -20,14 +20,40 @@ body.dark-mode a {
     color: #66b3ff;
 }
 
-/* Button */
+/* ========================
+   DARK / LIGHT MODE BUTTON
+   ======================== */
 #themeToggle {
-   height: 50%;
-   width: 50%;
-    border: none;
-    border-radius: 50%;
+    position: fixed;
+    top: 18px;
+    right: 20px;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.85);
+    border: 2px solid #2f5f80;
+    border-radius: 50px;
+    padding: 8px 16px;
+    font-size: 20px;
     cursor: pointer;
-   float: right;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    backdrop-filter: blur(6px);
+    line-height: 1;
+}
+
+#themeToggle:hover {
+    background: rgba(47, 95, 128, 0.15);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode #themeToggle {
+    background: rgba(30, 30, 30, 0.88);
+    border-color: #66d9ff;
+    box-shadow: 0 4px 14px rgba(102, 217, 255, 0.25);
+}
+
+body.dark-mode #themeToggle:hover {
+    background: rgba(102, 217, 255, 0.15);
 }
 
 /* Header */
@@ -230,4 +256,143 @@ body.dark-mode footer h3,
 body.dark-mode footer p,
 body.dark-mode footer a {
     color: white !important;
+}
+
+/* ========================
+   CAMPUS HIGHLIGHTS SLIDER
+   ======================== */
+
+#campus-highlights-section {
+    padding: 20px;
+}
+
+.campus-slider {
+    position: relative;
+    width: 100%;
+    max-width: 860px;
+    margin: 20px auto 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.22);
+}
+
+.slider-track {
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+
+.slide.active {
+    display: block;
+    animation: fadeInSlide 0.6s ease;
+}
+
+@keyframes fadeInSlide {
+    from { opacity: 0; transform: scale(1.02); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+.slide img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    opacity: 1;
+    border-radius: 0;
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(10,20,60,0.85));
+    color: #fff;
+    padding: 30px 24px 22px;
+    text-align: left;
+}
+
+.slide-caption h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.slide-caption p {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Prev / Next Buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.22);
+    border: 2px solid rgba(255,255,255,0.5);
+    color: #fff;
+    font-size: 22px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.25s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: 1;
+}
+
+.slider-btn:hover {
+    background: rgba(7, 32, 255, 0.75);
+    transform: translateY(-50%) scale(1.12);
+}
+
+.prev-btn { left: 14px; }
+.next-btn { right: 14px; }
+
+/* Dot Indicators */
+.slider-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.45);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    border: 1.5px solid rgba(255,255,255,0.7);
+}
+
+.dot.active {
+    background: #ffffff;
+    transform: scale(1.3);
+}
+
+/* Dark mode slider */
+body.dark-mode .campus-slider {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.55);
+}
+
+body.dark-mode .slide-caption {
+    background: linear-gradient(transparent, rgba(0,0,0,0.9));
 }
