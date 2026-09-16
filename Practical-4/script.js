@@ -268,12 +268,11 @@ if (togglePasswordBtn && passwordInput) {
     });
 }
 
-// Fetch data from students.json
-fetch("students.json")
-    .then(response => response.json())
-    .then(data => {
-        let container = document.getElementById("students-container");
-
+// Fetch data from students.json (only if students-container exists)
+let studentContainer = document.getElementById("students-container");
+if (studentContainer) {
+    function displayStudents(data) {
+        studentContainer.innerHTML = "";
         data.forEach(student => {
             let card = document.createElement("div");
             card.className = "student-card";
@@ -282,10 +281,33 @@ fetch("students.json")
                 <p><b>Course:</b> ${student.course}</p>
                 <p><b>Semester:</b> ${student.semester}</p>
                 <p><b>GPA:</b> ${student.gpa}</p>
+                <p><b>Status:</b> ${student.status}</p>
             `;
-            container.appendChild(card);
+            studentContainer.appendChild(card);
         });
-    })
-    .catch(error => {
-        console.log("Error fetching data:", error);
-    });
+    }
+
+
+    fetch("../../Practical-5/students.json")
+        .catch(() => fetch("../Practical-5/students.json"))
+        .then(response => {
+            if (!response.ok) throw new Error("HTTP error " + response.status);
+            return response.json();
+        })
+        .then(data => {
+            displayStudents(data);
+        })
+        .catch(error => {
+            console.log("Fetch error (e.g. file:// protocol):", error);
+            // Fallback for direct file:// open where browser blocks local fetch
+            if (window.location.protocol === "file:") {
+                let fallbackData = [
+                    { name: "Aarav Sharma", course: "B.Tech Computer Science", semester: "5th Sem", gpa: 8.9, status: "Active" },
+                    { name: "Priya Patel", course: "B.Tech Information Technology", semester: "3rd Sem", gpa: 9.2, status: "Active" },
+                    { name: "Rohan Verma", course: "BCA", semester: "5th Sem", gpa: 8.1, status: "Inactive" },
+                    { name: "Sneha Kulkarni", course: "MCA", semester: "1st Sem", gpa: 9.5, status: "Active" }
+                ];
+                displayStudents(fallbackData);
+            }
+        });
+}
