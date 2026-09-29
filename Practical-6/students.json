@@ -1,7 +1,7 @@
 [
   {
-    "id": 101,
-    "name": "Aarav",
+    "id": 14,
+    "name": "Yaksh",
     "course": "B.Tech Computer Science",
     "semester": "5th Sem",
     "email": "aarav@studenthub.edu",
@@ -9,8 +9,8 @@
     "status": "Active"
   },
   {
-    "id": 102,
-    "name": "Priya",
+    "id": 63,
+    "name": "Mayank",
     "course": "B.Tech Information Technology",
     "semester": "3rd Sem",
     "email": "priya@studenthub.edu",
@@ -18,8 +18,8 @@
     "status": "Active"
   },
   {
-    "id": 103,
-    "name": "Rohan ",
+    "id": 2,
+    "name": "Rushi ",
     "course": "BCA",
     "semester": "5th Sem",
     "email": "rohan@studenthub.edu",
@@ -27,8 +27,8 @@
     "status": "Inactive"
   },
   {
-    "id": 104,
-    "name": "Sneha",
+    "id": 119,
+    "name": "Nehal",
     "course": "MCA",
     "semester": "1st Sem",
     "email": "sneha@studenthub.edu",

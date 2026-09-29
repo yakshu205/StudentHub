@@ -180,9 +180,7 @@ if (register) {
         }, 2000);
     });
 }
-// ========================
-// DARK / LIGHT MODE TOGGLE
-// ========================
+
 
 var themeToggleBtn = document.getElementById("themeToggle");
 
@@ -208,9 +206,6 @@ if (themeToggleBtn) {
     });
 }
 
-// ========================
-// CAMPUS SLIDER
-// ========================
 
 var currentSlide = 0;
 
@@ -249,9 +244,7 @@ setInterval(function () {
     moveSlide(1);
 }, 4000);
 
-// ========================
-// SHOW / HIDE PASSWORD
-// ========================
+
 
 var togglePasswordBtn = document.getElementById("togglePassword");
 var passwordInput = document.getElementById("password");
@@ -288,8 +281,8 @@ if (studentContainer) {
     }
 
 
-    fetch("../../Practical-5/students.json")
-        .catch(() => fetch("../Practical-5/students.json"))
+    fetch("../../Practical-6/students.json")
+        .catch(() => fetch("../Practical-6/students.json"))
         .then(response => {
             if (!response.ok) throw new Error("HTTP error " + response.status);
             return response.json();
@@ -299,7 +292,7 @@ if (studentContainer) {
         })
         .catch(error => {
             console.log("Fetch error (e.g. file:// protocol):", error);
-            // Fallback for direct file:// open where browser blocks local fetch
+           
             if (window.location.protocol === "file:") {
                 let fallbackData = [
                     { name: "Aarav Sharma", course: "B.Tech Computer Science", semester: "5th Sem", gpa: 8.9, status: "Active" },
