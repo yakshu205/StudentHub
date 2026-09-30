@@ -291,14 +291,14 @@ if (studentContainer) {
             displayStudents(data);
         })
         .catch(error => {
-            console.log("Fetch error (e.g. file:// protocol):", error);
+            console.log("Fetch error :", error);
            
             if (window.location.protocol === "file:") {
                 let fallbackData = [
-                    { name: "Aarav Sharma", course: "B.Tech Computer Science", semester: "5th Sem", gpa: 8.9, status: "Active" },
-                    { name: "Priya Patel", course: "B.Tech Information Technology", semester: "3rd Sem", gpa: 9.2, status: "Active" },
-                    { name: "Rohan Verma", course: "BCA", semester: "5th Sem", gpa: 8.1, status: "Inactive" },
-                    { name: "Sneha Kulkarni", course: "MCA", semester: "1st Sem", gpa: 9.5, status: "Active" }
+                    { name: "Aarav", course: "B.Tech Computer Science", semester: "5th Sem", gpa: 8.9, status: "Active" },
+                    { name: "Priya", course: "B.Tech Information Technology", semester: "3rd Sem", gpa: 9.2, status: "Active" },
+                    { name: "Rohan", course: "BCA", semester: "5th Sem", gpa: 8.1, status: "Inactive" },
+                    { name: "Sneha", course: "MCA", semester: "1st Sem", gpa: 9.5, status: "Active" }
                 ];
                 displayStudents(fallbackData);
             }
