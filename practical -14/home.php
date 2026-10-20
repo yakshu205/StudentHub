@@ -1,0 +1,249 @@
+<?php
+require_once "auth.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub Portal</title>
+  <link rel="stylesheet" href="home.css">
+
+</head>
+<header>
+  <!-- complete -->
+
+  <!-- Dark / Light Mode Toggle Button -->
+  <button id="themeToggle" title="Toggle Dark/Light Mode">🌙</button>
+
+  <center>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_msVTJ1UZqmtO-rMykxXBRws_5_EmYQxh7ZsTVTWeQoeh8BjRmlV7sLk&s=10"
+      alt="StudentHub Logo" width="120">
+
+    <h1>StudentHub Portal</h1>
+
+    <br>
+    <p><b>Empowering Students Through Technology</b></p>
+
+  </center>
+
+  <!-- DYNAMIC ROLE-BASED NAVIGATION MENU -->
+  <?php render_navigation('home.php'); ?>
+
+  <marquee style="background-color: rgb(251, 248, 148); color: #f37208;">
+    Admission Open 2026 • AI Workshop Registration Started • National Hackathon Registration Open • Semester Examination
+    Timetable Released
+  </marquee>
+
+</header>
+
+<body>
+
+  <main>
+
+    <section>
+
+      <center>
+
+        <h2>Welcome to StudentHub</h2>
+
+        <p>
+          StudentHub is a smart university portal designed to help students
+          manage their academic and campus life in one place.
+          Students can access course information, register for events,
+          view notices, manage profiles, communicate with faculty,
+          and stay updated with university activities.
+        </p>
+
+        <p>
+          Our aim is to create a digital environment where every student
+          can easily find academic resources, participate in extracurricular
+          activities, and improve their learning experience.
+        </p>
+
+        <p>
+          <a href="../Practical-8/register.php">Register Now</a> |
+          <a href="login.php">Student Login</a>
+        </p>
+
+      </center>
+
+    </section>
+
+    <hr>
+
+    <section id="campus-highlights-section">
+
+      <h2>Campus Highlights</h2>
+
+      <div class="campus-slider">
+        <div class="slider-track">
+          <div class="slide active">
+            <img src="../IMAGES/college campus.jpg" alt="Students at Campus">
+            <div class="slide-caption">
+              <h3>Vibrant Campus Life</h3>
+              <p>Students collaborating and growing together on our beautiful campus.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="../IMAGES/campus2.jpeg" alt="Graduation Ceremony">
+            <div class="slide-caption">
+              <h3>Graduation Celebrations</h3>
+              <p>Proudly celebrating our students' milestones and achievements.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="../IMAGES/campus3.jpeg" alt="Student Life">
+            <div class="slide-caption">
+              <h3>Academic Excellence</h3>
+              <p>Dedicated students thriving in a world-class learning environment.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="../IMAGES/campus4.jpg" alt="Exam Hall">
+            <div class="slide-caption">
+              <h3> State-of-the-Art Facilities</h3>
+              <p>Modern examination halls and labs equipped for 21st-century learning.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="slider-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+
+        <div class="slider-dots">
+          <span class="dot active" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
+          <span class="dot" onclick="goToSlide(3)"></span>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+
+      <article>
+
+        <h2>Semester Examination</h2>
+
+        <p>
+          The examination timetable has been published.
+          Students are requested to check the schedule regularly.
+        </p>
+
+      </article>
+
+    </section>
+
+    <hr>
+
+    <section>
+
+      <h2>Student Services</h2>
+
+      <ul>
+        <li>Online Registration</li>
+        <li>Course Information</li>
+        <li>Digital Library</li>
+        <li>Placement Cell</li>
+        <li>Scholarship Updates</li>
+        <li>Student Clubs</li>
+        <li>Event Registration</li>
+        <li>Exam Schedule</li>
+        <li>Attendance Information</li>
+        <li>Feedback System</li>
+      </ul>
+
+    </section>
+
+    <hr>
+
+    <section>
+
+      <h2>Why Choose StudentHub?</h2>
+
+      <p>
+        StudentHub provides students with a single platform to
+        access academic resources, university announcements,
+        placement information, event registration,
+        faculty details and student support services.
+      </p>
+
+      <ul>
+        <li>Easy Navigation</li>
+        <li>User Friendly Interface</li>
+        <li>Secure Student Login</li>
+        <li>Latest University Updates</li>
+        <li>Quick Access to Important Information</li>
+      </ul>
+
+    </section>
+
+    <hr>
+
+    <section>
+
+      <h2>Student Achievements</h2>
+
+      <article>
+        <h3>National Coding Championship</h3>
+        <p>
+          Our students secured first position in the National Coding Championship.
+        </p>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3>Research Publications</h3>
+        <p>
+          Many students have published research papers in international journals.
+        </p>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3>Campus Placements</h3>
+        <p>
+          Students have been placed in leading IT companies through campus recruitment.
+        </p>
+      </article>
+
+    </section>
+
+    <hr>
+
+    <section>
+
+      <h2>University Statistics</h2>
+
+      <p><b>5000+</b> Students</p>
+      <p><b>150+</b> Faculty Members</p>
+      <p><b>100+</b> Annual Events</p>
+      <p><b>50+</b> Student Clubs</p>
+      <p><b>20+</b> Academic Departments</p>
+
+    </section>
+
+  </main>
+
+  <hr>
+
+  <footer>
+    <center>
+      <h3>StudentHub Portal</h3>
+      <p>Email : <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a></p>
+      <p>Phone : <a href="tel:+919876543210">+91 9876543210</a></p>
+      <p>Address : CHARUSAT University, Anand, Gujarat</p>
+      <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </center>
+  </footer>
+
+  <script src="..\Practical-4_and_Practical-5\script.js" defer></script>
+</body>
+
+</html>

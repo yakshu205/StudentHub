@@ -1,0 +1,121 @@
+<?php
+require_once "auth.php";
+?>
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - About</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<header>
+  <!-- complete -->
+<center>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_msVTJ1UZqmtO-rMykxXBRws_5_EmYQxh7ZsTVTWeQoeh8BjRmlV7sLk&s=10" alt="StudentHub Logo" width="120">
+
+<h1>StudentHub Portal</h1>
+
+<br>
+<p><b>Empowering Students Through Technology</b></p>
+
+</center>
+
+<nav class="navigation">
+
+<center>
+
+<a href="about.php">About</a> |
+<a href="dashboard.php">Dashboard</a> |
+<a href="events.php">Events</a> |
+<a href="profile.php">Profile</a> |
+<a href="contact.php">Contact</a> |
+<?php if (isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
+    <a href="admin.php">Admin</a> |
+<?php endif; ?>
+<a href="faq.php">FAQ</a> |
+<a href="feedback.php">Feedback</a> |
+<a href="logout.php">Logout</a>
+
+</center> 
+</nav>
+
+<marquee style="background-color: rgb(251, 248, 148); color: #f37208;">
+Admission Open 2026 • AI Workshop Registration Started • National Hackathon Registration Open • Semester Examination Timetable Released
+</marquee>
+
+</header>
+
+<body>
+    <center>
+    <section>
+        <h1>About StudentHub</h1>
+        <p>Empowering Student Through Technology</p>
+    </section></center>
+
+    <section>
+        <h2>Mission</h2>
+        <ul>
+            <li>Quality Education</li>
+            <li>Student Engagement</li>
+            <li>Career Development</li>
+        </ul>
+    </section>
+
+    <br>
+    <section>
+        <h2>Student Services</h2>
+        <ul>
+            <li>Events</li>
+            <li>Placements</li>
+            <li>Workshops</li>
+        </ul>
+    </section>
+    <br>
+    <section>
+        <h2>Resources</h2>
+        <ul>
+            <li>Library Access</li>
+            <li>Study Materials</li>
+            <li>FAQ</li>
+        </ul>
+    </section>
+    <br>
+    <section>
+    <h2>Who We Are</h2>
+    <p>
+        StudentHub is an online platform where students can
+        access academic resources, register for events,
+        view notices, manage profiles and connect with the
+        university community.
+    </p>
+</section>
+
+<section>
+    <h2>Our Features</h2>
+      <ul>
+        <li>Study Materials</li>
+        <li>Campus Events</li>
+        <li>Placement Support</li>
+        <li>Student Feedback</li>
+      </ul>
+</section>
+
+<section>
+    <h2>Our Achievements</h2>
+    <p>5000+ Students</p>
+    <p>100+ Events</p>
+    <p>50+ Clubs</p>
+</section>
+
+</main>
+
+<footer>
+    <h2>StudentHub Portal</h2>
+    <p><strong>Email :</strong> <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a></p>
+    <p><strong>Phone :</strong> <a href="tel:+91 9876543210"> +91 9876543210</a></p>
+    <p><strong>Address : </strong>CHARUSAT University, Anand, Gujarat</p>
+    <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

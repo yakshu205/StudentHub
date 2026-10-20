@@ -1,0 +1,187 @@
+<?php
+require_once "auth.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub - Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<header>
+  <!-- complete -->
+<center>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_msVTJ1UZqmtO-rMykxXBRws_5_EmYQxh7ZsTVTWeQoeh8BjRmlV7sLk&s=10" alt="StudentHub Logo" width="120">
+
+<h1>StudentHub Portal</h1>
+
+<br>
+<p><b>Empowering Students Through Technology</b></p>
+
+</center>
+
+<!-- DYNAMIC ROLE-BASED NAVIGATION MENU -->
+<?php render_navigation('feedback.php'); ?>
+
+<marquee style="background-color: rgb(251, 248, 148); color: #f37208;">
+Admission Open 2026 • AI Workshop Registration Started • National Hackathon Registration Open • Semester Examination Timetable Released
+</marquee>
+
+</header>
+<body>
+
+    <h1> Student Hub Feedback Form</h1>
+    <p>
+        Thank you for using Student Hub. Your valuable feedback helps us improve
+        our platform and provide a better learning experience.
+    </p>
+
+    <hr>
+
+    <form action="#" method="POST">
+
+        <!-- Personal Information -->
+        <h2>Personal Information</h2>
+
+        <p>
+            <label for="name">Full Name <span style="color:red;">*</span></label><br>
+            <input type="text" id="name" name="name"
+            placeholder="Enter your full name" required value="<?php echo htmlspecialchars($_SESSION['user_name'] ?? ''); ?>">
+        </p>
+
+        <p>
+            <label for="email">Email Address <span style="color:red;">*</span></label><br>
+            <input type="email" id="email" name="email"
+            placeholder="your.email@example.com" required value="<?php echo htmlspecialchars($_SESSION['user_email'] ?? ''); ?>">
+        </p>
+
+        <p>
+            <label for="studentid">Student ID</label><br>
+            <input type="number" id="studentid" name="studentid"
+            placeholder="Enter Student ID">
+        </p>
+
+        <p>
+            <label for="department">Department</label><br>
+            <input type="text" id="department" name="department"
+            placeholder="Computer Engineering">
+        </p>
+
+        <p>
+            <label for="semester">Semester</label><br>
+            <select id="semester" name="semester">
+                <option value="">Select Semester</option>
+                <option>Semester 1</option>
+                <option>Semester 2</option>
+                <option>Semester 3</option>
+                <option>Semester 4</option>
+                <option>Semester 5</option>
+                <option>Semester 6</option>
+                <option>Semester 7</option>
+                <option>Semester 8</option>
+            </select>
+        </p>
+
+        <hr>
+
+        <!-- Feedback Details -->
+        <h2>Feedback Details</h2>
+
+        <p>
+            <label for="category">Feedback Category <span style="color:red;">*</span></label><br>
+            <select id="category" name="category" required>
+                <option value="">Select a Category</option>
+                <option>Courses & Content</option>
+                <option>Platform & Technology</option>
+                <option>Student Support</option>
+                <option>Community & Events</option>
+                <option>Faculty</option>
+                <option>Other</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="date">Date of Feedback</label><br>
+            <input type="date" id="date" name="date">
+        </p>
+
+        <p>
+            <input type="radio" id="r1" name="rating" value="1" required>
+            <label for="r1">1</label>
+
+            <input type="radio" id="r2" name="rating" value="2">
+            <label for="r2">2</label>
+
+            <input type="radio" id="r3" name="rating" value="3">
+            <label for="r3">3</label>
+
+            <input type="radio" id="r4" name="rating" value="4">
+            <label for="r4">4</label>
+
+            <input type="radio" id="r5" name="rating" value="5">
+            <label for="r5">5</label>
+        </p>
+
+        <p>
+            <label>Which features do you use? (Select all that apply)</label><br>
+
+            <input type="checkbox" id="events" name="feature" value="Events">
+            <label for="events">Events</label><br>
+
+            <input type="checkbox" id="courses" name="feature" value="Courses">
+            <label for="courses">Courses</label><br>
+
+            <input type="checkbox" id="notes" name="feature" value="Study Notes">
+            <label for="notes">Study Notes</label><br>
+
+            <input type="checkbox" id="discussion" name="feature" value="Discussion Forum">
+            <label for="discussion">Discussion Forum</label><br>
+
+            <input type="checkbox" id="profile" name="feature" value="Profile">
+            <label for="profile">Student Profile</label>
+        </p>
+
+        <p>
+            <label for="feedback">Your Feedback <span style="color:red;">*</span></label><br>
+            <textarea id="feedback" name="feedback"
+            rows="6" cols="55"
+            placeholder="Write your detailed feedback here..." required></textarea>
+        </p>
+
+        <p>
+            <label for="suggestion">Suggestions for Improvement</label><br>
+            <textarea id="suggestion" name="suggestion"
+            rows="4" cols="55"
+            placeholder="Share your suggestions..."></textarea>
+        </p>
+
+        <p>
+            <label for="recommend">Would you recommend Student Hub to others?</label><br>
+
+            <select id="recommend" name="recommend">
+                <option value="">Select</option>
+                <option>Yes</option>
+                <option>Maybe</option>
+                <option>No</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="checkbox" id="updates" name="updates">
+            <label for="updates">
+                I would like to receive updates about new features and events.
+            </label>
+        </p>
+
+        <hr>
+
+        <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset Form</button>
+        </p>
+
+    </form>
+
+</body>
+</html>

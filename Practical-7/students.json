@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "Yaksh Patel",
+        "email": "yaksh@charusat.edu.in",
+        "mobile": "9876543210",
+        "password_hash": "$2y$10$wOaR8s2G13rSg7hL8.kYzeqB9vJ4f9QeG7o9H3f9uY1V7.W4z9rKa",
+        "dob": "2004-06-15",
+        "gender": "Male",
+        "course": "B.Tech CSE",
+        "skills": [
+            "C++",
+            "Java",
+            "Python"
+        ],
+        "address": "CHARUSAT Campus, Changa, Gujarat",
+        "registered_at": "2026-10-20 10:00:00"
+    },
+    {
+        "id": 2,
+        "name": "Priya Sharma",
+        "email": "priya.test@charusat.edu.in",
+        "mobile": "9876501234",
+        "password_hash": "$2y$10$Mtsz.IDVPvofUTV4Mklm0uzkooaWx/uLzYP/7uFLakkTk.XS.nw.S",
+        "dob": "2003-08-20",
+        "gender": "Female",
+        "course": "B.Tech IT",
+        "skills": [
+            "Python",
+            "Java"
+        ],
+        "address": "Anand, Gujarat",
+        "registered_at": "2026-10-20 07:44:35"
+    }
+]

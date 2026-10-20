@@ -1,0 +1,189 @@
+/* about.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:
+         linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.45)),
+        url("../IMAGES/college campus.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+header img{
+    width:270px;
+    height:100px;
+    border-radius:10px;   /* Square with slightly rounded corners */
+    background:rgba(140, 131, 131, 0);
+    padding:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    margin-bottom:10px;
+}
+header h1{
+    margin-top:15px;
+    color:#000000;
+    font-size:36px;
+}
+
+/* Navigation */
+nav{
+    background:#2f5f80e1;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#dfc059;
+}
+/* Marquee */
+
+marquee{
+    background:#f0e5b763;
+    color:#222;
+    padding:10px;
+    font-weight:bold;
+}
+
+/* Main */
+
+main{
+    width:90%;
+    margin:20px auto;
+}
+
+/* First Section */
+
+/* About StudentHub Box */
+
+section:first-child{
+    width:450px;
+    margin:20px auto;
+    background:white;
+    padding:20px;
+    border-left:5px solid #1856d2;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    text-align:center;
+}
+
+section:first-child h2{
+    color:#222;
+    font-size:28px;
+}
+
+/* Remaining Sections */
+
+section:not(:first-child){
+    background:white;
+    width:100%;
+    margin:20px 0;
+    padding:20px;
+    border-left:5px solid #105be7;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    text-align:left;
+}
+
+h2{
+    color:#222;
+    margin-bottom:12px;
+}
+
+h3{
+    color:#444;
+    margin-bottom:10px;
+}
+
+p{
+    margin:10px 0;
+    line-height:1.7;
+}
+
+ul{
+    margin-left:25px;
+}
+
+li{
+    margin:8px 0;
+}
+
+article{
+    background:#fafafa;
+    padding:15px;
+    margin-top:15px;
+    border-radius:8px;
+    border-left:4px solid #FFD54F;
+}
+
+a{
+    color:#0d47a1;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+hr{
+    margin:20px 0;
+    border:1px solid #ddd;
+}
+
+/* Footer */
+
+footer{
+    background:#1c409d;   /* Light Yellow */
+    color:#ffffff;
+    text-align:center;
+    padding:30px 20px;
+    margin-top:30px;
+    border-top:4px solid #FBC02D;
+}
+
+footer h2{
+    color:#fdfdfd;
+    margin-bottom:10px;
+}
+
+footer p{
+    color:#fafafa;
+    margin:8px 0;
+}
+
+footer a{
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer a:hover{
+    color:#ffffff;
+    text-decoration:underline;
+}
+
+footer small{
+    display:block;
+    margin-top:15px;
+    color:#ffffff;
+}

@@ -1,0 +1,124 @@
+<?php
+require_once "auth.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub - Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<header>
+  <!-- complete -->
+<center>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_msVTJ1UZqmtO-rMykxXBRws_5_EmYQxh7ZsTVTWeQoeh8BjRmlV7sLk&s=10" alt="StudentHub Logo" width="120">
+
+<h1>StudentHub Portal</h1>
+
+<br>
+<p><b>Empowering Students Through Technology</b></p>
+
+</center>
+
+<!-- DYNAMIC ROLE-BASED NAVIGATION MENU -->
+<?php render_navigation('contact.php'); ?>
+
+<marquee style="background-color: rgb(251, 248, 148); color: #f37208;">
+Admission Open 2026 • AI Workshop Registration Started • National Hackathon Registration Open • Semester Examination Timetable Released
+</marquee>
+
+</header>
+<body>
+
+    <div class="container">
+
+    <div class="contact-box">
+
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Fill out the form below.</p>
+
+        <form>
+
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-box">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter your phone number">
+            </div>
+
+            <div class="input-box">
+                <label>Subject</label>
+                <input type="text" placeholder="Enter subject">
+            </div>
+
+            <div class="input-box">
+                <label>Message</label>
+                <textarea rows="6" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Send Message</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+
+        <div class="contact-info">
+
+            <h2>Contact Information</h2>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                CHARUSAT University, Changa, Anand, Gujarat
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 9876543210
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                studenthub@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-globe"></i>
+                www.studenthub.com
+            </p>
+
+        </div>
+
+        <div class="buttons">
+
+            <a href="home.php">
+                <button type="button">Home</button>
+            </a>
+
+            <a href="dashboard.php">
+                <button type="button">Dashboard</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Student Hub | All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

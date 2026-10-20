@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background:#eef3f8;
+    padding:40px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* ================= HEADER ================= */
+
+.profile-header{
+    background:linear-gradient(135deg,#0d6efd,#0099ff);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.profile-header img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:6px solid white;
+    object-fit:cover;
+    margin-bottom:15px;
+    background:white;
+}
+
+.profile-header h1{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.profile-header p{
+    font-size:18px;
+    margin-bottom:18px;
+}
+
+.badge{
+    display:inline-block;
+    background:white;
+    color:#0d6efd;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    background:#f8fbff;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card i{
+    font-size:35px;
+    color:#0d6efd;
+    margin-bottom:12px;
+}
+
+.card h2{
+    color:#0d6efd;
+    margin-bottom:5px;
+}
+
+.card p{
+    color:#666;
+}
+
+/* ================= SECTION ================= */
+
+.section{
+    padding:30px;
+}
+
+.section h2{
+    color:#0d6efd;
+    margin-bottom:20px;
+    border-left:5px solid #0d6efd;
+    padding-left:10px;
+}
+
+/* ================= DETAILS ================= */
+
+.details{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+.details div{
+    background:#f8fbff;
+    padding:18px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.details h4{
+    color:#0d6efd;
+    margin-bottom:8px;
+}
+
+.details p{
+    color:#444;
+}
+
+/* ================= SKILLS ================= */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.skills span{
+    background:#0d6efd;
+    color:white;
+    padding:10px 20px;
+    border-radius:30px;
+    font-size:15px;
+    transition:.3s;
+}
+
+.skills span:hover{
+    background:#084298;
+}
+
+/* ================= ACHIEVEMENTS ================= */
+
+.section ul{
+    list-style:none;
+}
+
+.section ul li{
+    background:#f8fbff;
+    margin-bottom:12px;
+    padding:15px;
+    border-left:5px solid #0d6efd;
+    border-radius:8px;
+}
+
+/* ================= BUTTONS ================= */
+
+.buttons{
+    text-align:center;
+    padding:30px;
+}
+
+.buttons a{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:#0d6efd;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:8px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.buttons a:hover{
+    background:#084298;
+    transform:translateY(-3px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .profile-header h1{
+        font-size:26px;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .details{
+        grid-template-columns:1fr;
+    }
+
+    .buttons a{
+        display:block;
+        margin:12px auto;
+        width:220px;
+    }
+}

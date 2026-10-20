@@ -1,0 +1,109 @@
+<?php
+require_once "auth.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - StudentHub Portal</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<header>
+  <!-- complete -->
+<center>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_msVTJ1UZqmtO-rMykxXBRws_5_EmYQxh7ZsTVTWeQoeh8BjRmlV7sLk&s=10" alt="StudentHub Logo" width="120">
+
+<h1>StudentHub Portal</h1>
+
+<br>
+<p><b>Empowering Students Through Technology</b></p>
+
+</center>
+
+<!-- DYNAMIC ROLE-BASED NAVIGATION MENU -->
+<?php render_navigation('faq.php'); ?>
+
+<marquee style="background-color: rgb(251, 248, 148); color: #f37208;">
+Admission Open 2026 • AI Workshop Registration Started • National Hackathon Registration Open • Semester Examination Timetable Released
+</marquee>
+
+</header>
+<body>
+
+  <br>
+
+   <main>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <article>
+        <h3>1. How do I register on StudentHub?</h3>
+        <p>
+            Click on the <b>Register</b> page, fill in your details,
+            and submit the registration form.
+        </p>
+    </article>
+
+    <article>
+        <h3>2. How do I login?</h3>
+        <p>
+            Enter your registered email and password on the Login page.
+        </p>
+    </article>
+
+    <article>
+        <h3>3. Can I edit my profile?</h3>
+        <p>
+            Yes. Go to the Profile page and click the
+            <b>Edit Profile</b> button.
+        </p>
+    </article>
+
+    <article>
+        <h3>4. How can I check my attendance?</h3>
+        <p>
+            Login to your Dashboard and open the Attendance section.
+        </p>
+    </article>
+
+    <article>
+        <h3>5. Where can I see upcoming events?</h3>
+        <p>
+            Visit the Events page to view all upcoming university events.
+        </p>
+    </article>
+
+    <article>
+        <h3>6. I forgot my password. What should I do?</h3>
+        <p>
+            Contact the administrator or use the Forgot Password option
+            (if available).
+        </p>
+    </article>
+
+    <article>
+        <h3>7. How can I contact StudentHub?</h3>
+        <p>
+            Visit the Contact page or email us at
+            <b>studenthub@gmail.com</b>.
+        </p>
+    </article>
+
+</main>
+
+<div class="footer-links">
+    <a href="home.php">Home</a>
+    <a href="dashboard.php">Dashboard</a>
+    <a href="contact.php">Contact</a>
+</div>
+
+<footer>
+    <h2>StudentHub Portal</h2>
+    <p><strong>Email:</strong> studenthub@gmail.com</p>
+    <p><strong>Phone: </strong>+91 9876543210</p>
+    <p><strong>Address:</strong> CHARUSAT University, Anand, Gujarat</p>
+    <p>&copy; 2026 StudentHub. All Rights Reserved.</p>        
+</footer>
+</body>
+</html>
