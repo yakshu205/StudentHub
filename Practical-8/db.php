@@ -1,15 +1,12 @@
 <?php
-// ==============================================================================
-// Database Configuration & Connection (XAMPP MySQL)
-// Practical-8: StudentHub Registration Form with MySQL Database
-// ==============================================================================
+
 
 $host     = "localhost";
 $username = "root";
 $password = "";
 $database = "studenthub_db";
 
-// 1. Initial connection without database to ensure database exists
+
 $conn = mysqli_connect($host, $username, $password);
 
 if (!$conn) {
@@ -20,17 +17,16 @@ if (!$conn) {
          </div>");
 }
 
-// 2. Automatically create database if not exists
+
 $createDbQuery = "CREATE DATABASE IF NOT EXISTS `$database` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci";
 if (!mysqli_query($conn, $createDbQuery)) {
     die("Error creating database: " . mysqli_error($conn));
 }
 
-// 3. Select the database
+
 mysqli_select_db($conn, $database);
 mysqli_set_charset($conn, "utf8mb4");
 
-// 4. Automatically create 'students' table if not exists
 $createTableQuery = "CREATE TABLE IF NOT EXISTS `students` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(100) NOT NULL,
